@@ -1,0 +1,37 @@
+[user]
+	email = lxue02@gmail.com
+	name = Luca Xue
+[alias]
+	# Common git commands
+	a = add
+	aa = add .
+	cm = commit -m
+	c = commit
+	co = checkout
+ 	br = branch
+	st = status
+	adog = log --all --decorate --oneline --graph
+
+	## Rebase 
+	rb = rebase
+	rekeepdate = rebase --committer-date-is-author-date -i --root
+	rebasedate = rebase --committer-date-is-author-date
+	reroot = rebase -i --root
+
+	## Stash 
+	s = stash
+	sl = stash list
+	spm = stash push -m
+	sd = stash drop
+	sa = stash apply
+	sp = stash pop
+[init]
+	defaultBranch = main
+[branch]
+	autosetuprebase = always
+[pull]
+	rebase = true
+[emailprompt "lxue02@gmail.com"]
+    prompt = "🏠 "
+[emailprompt "luca@surupartners.com"]
+    prompt = "👔 "
