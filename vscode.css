@@ -1,0 +1,12 @@
+.title.show-file-icons {
+  display: none !important;
+}
+
+.editor-container,
+.editor-instance > div,
+.monaco-editor.mac,
+.overflow-guard,
+.editor-scrollable {
+  height: 100% !important;
+}
+

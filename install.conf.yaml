@@ -6,5 +6,6 @@
     ~/.vimrc: vimrc
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
-
-
+    ~/.php-cs-fixer.php: php-cs-fixer.php
+    ~/.vscode.css: vscode.css
+    ~/.config/karabiner/karabiner.json: karabiner.json
