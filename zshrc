@@ -255,43 +255,7 @@ alias la="ls -la --group-dirs first"
 alias rmf="rm -rf"
 alias cat="bat"
 alias sourcezsh="source ~/.zshrc"
-alias karabiner="code ~/.config/karabiner/karabiner.json"
-
-# Syncs dotfiles with remote backup repo
-dot() {
-    if [ "$1" = "" ]
-    then
-        echo "sync [ acm 'message' ] [ p: push ] [ rb: rebase ]"
-    else
-        # store initial state
-        dir=$PWD && email="$(gemail)"
-
-        # change git to home email
-        ghome > /dev/null 2>&1
-
-        # sync dotfiles in ~/ to ~/code/dotfiles
-        echo "🔃 Syncing root dotfiles with local repository..."
-        cd ~ && rsync -avh --no-perms \
-            .gitconfig \
-            .vimrc \
-            .vimrc~ \
-            .yarnrc \
-            .zprofile \
-            .vscode.css \
-            .zshrc \
-            ~/.dotfiles/
-
-        # run command in dotfiles dir
-        cd ~/.dotfiles/
-        echo "\n⤴️ Running git command..."
-        if [ "$1" = "acm" ]; then gaa && gcm "$2"; fi
-        if [ "$1" = "p" ]; then g push -f; fi
-        if [ "$1" = "rb" ]; then g rekeepdate; fi
-
-        # restore to initial state
-        gsemail $email && cd $dir
-    fi
-}
+alias karabiner="~/.config/karabiner/karabiner.json"
 
 #-- Php 7.4
 # export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
