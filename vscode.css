@@ -4,9 +4,8 @@
 
 .editor-container,
 .editor-instance > div,
-.monaco-editor.mac,
+/* .monaco-editor.mac, */
 .overflow-guard,
 .editor-scrollable {
   height: 100% !important;
 }
-
