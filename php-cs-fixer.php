@@ -24,7 +24,7 @@ $rules = [
     'encoding' => true,
     'full_opening_tag' => true,
     'fully_qualified_strict_types' => true,
-    'function_declaration' => true,
+    'function_declaration' => ['closure_function_spacing' => 'none'],
     'function_typehint_space' => true,
     'general_phpdoc_tag_rename' => true,
     'heredoc_to_nowdoc' => true,
@@ -44,7 +44,7 @@ $rules = [
     'multiline_whitespace_before_semicolons' => ['strategy' => 'no_multi_line'],
     'native_function_casing' => true,
     'no_alternative_syntax' => true,
-    'new_with_braces' => true,
+    // 'new_with_braces' => true,
     'no_blank_lines_after_class_opening' => true,
     'no_blank_lines_after_phpdoc' => true,
     'no_break_comment' => true,
@@ -80,7 +80,10 @@ $rules = [
     'not_operator_with_space' => true,
     'object_operator_without_whitespace' => true,
     'ordered_class_elements' => ['order' => ['use_trait']],
-    'ordered_imports' => ['sort_algorithm' => 'alpha'],
+    'ordered_imports' => [
+        'sort_algorithm' => 'alpha',
+        'imports_order' => ['const', 'class', 'function'],
+    ],
     'phpdoc_indent' => true,
     'phpdoc_inline_tag_normalizer' => true,
     'phpdoc_no_access' => true,
@@ -116,7 +119,7 @@ $rules = [
     'unary_operator_spaces' => true,
     'visibility_required' => [
         'elements' => [
-            'method',
+            // 'method',
             'property',
         ],
     ],
