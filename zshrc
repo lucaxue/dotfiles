@@ -119,6 +119,7 @@ source $ZSH/oh-my-zsh.sh
 #-- Config Files
 alias zshrc="vi ~/.zshrc"
 alias vimrc="vi ~/.vimrc"
+alias vimode="vi ~/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh"
 alias gitconfig="vi ~/.gitconfig"
 alias mycnf="vi /opt/homebrew/etc/my.cnf"
 alias phpini="vi /opt/homebrew/etc/php/8.0/php.ini"
