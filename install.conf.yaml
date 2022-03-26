@@ -10,3 +10,4 @@
     ~/.vscode.css: vscode.css
     ~/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh: vi-mode.plugin.zsh
     ~/.config/karabiner/karabiner.json: karabiner.json
+    ~/.config/nvim: nvim
