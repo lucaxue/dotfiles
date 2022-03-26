@@ -3,14 +3,20 @@
 	name = Luca Xue
 [alias]
 	# Common git commands
-	a = add
-	aa = add .
-	cm = commit -m
-	c = commit
+    a = add
+    d = diff
 	co = checkout
  	br = branch
 	st = status
+	aa = add .
+	cm = commit -m
+	c = commit
+    ps = "!git push origin $(git rev-parse --abbrev-ref HEAD)"
+    pl = "!git pull origin $(git rev-parse --abbrev-ref HEAD)"
+    find = "!f() { git log --pretty=format:\"%h %cd [%cn] %s%d\" --date=relative -S'pretty' -S\"$@\" | peco | awk '{print $1}' | xargs -I {} git diff {}^ {}; }; f"
 	adog = log --all --decorate --oneline --graph
+    hist = log --pretty=format:\"%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(reset)\" --graph --date=relative --decorate --all
+    llog = log --graph --name-status --pretty=format:\"%C(red)%h %C(reset)(%cd) %C(green)%an %Creset%s %C(yellow)%d%Creset\" --date=relative
 
 	## Rebase 
 	rb = rebase
@@ -25,6 +31,15 @@
 	sd = stash drop
 	sa = stash apply
 	sp = stash pop
+[core]
+    editor = vi
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+    grep = auto
+    ui = auto
 [init]
 	defaultBranch = main
 [branch]
