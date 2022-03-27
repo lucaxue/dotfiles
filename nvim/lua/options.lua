@@ -1,3 +1,4 @@
+vim.o.clipboard = "unnamedplus"
 vim.o.expandtab = true
 vim.o.smarttab = true
 vim.o.shiftwidth = 4
@@ -8,5 +9,8 @@ vim.o.wrap = false
 vim.o.list = true
 vim.o.listchars = 'tab:▸ ,trail:·'
 vim.o.scrolloff = 8
+vim.o.sidescrolloff = 8
 vim.o.mouse = 'a'
 vim.o.termguicolors = true
+vim.o.splitbelow = true
+vim.o.splitright = true
