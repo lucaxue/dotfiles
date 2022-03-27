@@ -1,3 +1,3 @@
-require 'plugins'
-require 'options'
-require 'mappings'
+require 'user.plugins'
+require 'user.options'
+require 'user.mappings'

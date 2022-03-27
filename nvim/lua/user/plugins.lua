@@ -45,14 +45,14 @@ return packer.startup(function()
   use {
     'neovim/nvim-lspconfig',
     config = function()
-      require('plugins.lspconfig')
+      require('user.plugins.lspconfig')
     end
   }
 
   use {
     'projekt0n/github-nvim-theme',
     config = function()
-      require('plugins.github-theme')
+      require('user.plugins.github-theme')
     end
   }
 
