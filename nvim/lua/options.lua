@@ -1,5 +1,12 @@
-vim.opt.expandtab = true
-vim.opt.smarttab = true
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
-
+vim.o.expandtab = true
+vim.o.smarttab = true
+vim.o.shiftwidth = 4
+vim.o.tabstop = 4
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.wrap = false
+vim.o.list = true
+vim.o.listchars = 'tab:▸ ,trail:·'
+vim.o.scrolloff = 8
+vim.o.mouse = 'a'
+vim.o.termguicolors = true
