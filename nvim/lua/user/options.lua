@@ -14,3 +14,4 @@ vim.o.mouse = 'a'
 vim.o.termguicolors = true
 vim.o.splitbelow = true
 vim.o.splitright = true
+vim.o.cursorline = true
