@@ -150,7 +150,7 @@ a() {
 phprun() {
     if [ -f ./docker/scripts/"$1" ]
     then
-	bash ./docker/scripts/"$@"
+        bash ./docker/scripts/"$@"
     elif [ -f ./vendor/bin/"$1" ]
     then
         ./vendor/bin/"$@"
