@@ -78,6 +78,13 @@ packer.startup(function(use)
     end
   }
 
+  use {
+    'f-person/auto-dark-mode.nvim',
+    config = function() 
+      require('user.plugins.auto-dark-mode')
+    end
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
