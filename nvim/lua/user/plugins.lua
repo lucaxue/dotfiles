@@ -4,6 +4,13 @@ packer.startup(function(use)
   use 'wbthomason/packer.nvim' -- Let packer manage itself
 
   use {
+    'projekt0n/github-nvim-theme',
+    config = function()
+      require('user.plugins.github-theme')
+    end
+  }
+
+  use {
     'neovim/nvim-lspconfig',
     config = function()
       require('user.plugins.lspconfig')
@@ -27,9 +34,17 @@ packer.startup(function(use)
   }
 
   use {
-    'projekt0n/github-nvim-theme',
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate',
     config = function()
-      require('user.plugins.github-theme')
+      require('user.plugins.treesitter')
+    end
+  }
+
+  use {
+    'windwp/nvim-autopairs',
+    config = function()
+      require('user.plugins.autopairs')
     end
   }
 
