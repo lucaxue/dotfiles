@@ -18,6 +18,13 @@ packer.startup(function(use)
   }
 
   use {
+    'L3MON4D3/LuaSnip',
+    config = function()
+      require('user.plugins.luasnip')
+    end
+  }
+
+  use {
     'hrsh7th/nvim-cmp',
     requires = {
       'hrsh7th/cmp-buffer',
